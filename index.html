@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>University ERP — Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- TOP RED RIBBON -->
+  <div class="topbar">
+    <div class="brand-left">
+      <h2>University ERP</h2>
+    </div>
+
+    <div class="topnav">
+      <details class="dropdown">
+        <summary>Help ▾</summary>
+        <div class="dropdown-menu" role="menu" aria-label="Help menu">
+          <a href="#user-guide">User Guide</a>
+          <a href="#tutorials">Tutorials</a>
+          <a href="#support">Support Center</a>
+          <small>Quick resources for first-time users.</small>
+        </div>
+      </details>
+
+      <details class="dropdown">
+        <summary>Contact ▾</summary>
+        <div class="dropdown-menu" role="menu" aria-label="Contact menu">
+          <a href="#it-support">IT Support</a>
+          <a href="#admin-office">Admin Office</a>
+          <a href="#finance">Finance Dept.</a>
+          <small>Who to contact for specific issues.</small>
+        </div>
+      </details>
+
+      <details class="dropdown">
+        <summary>FAQ ▾</summary>
+        <div class="dropdown-menu" role="menu" aria-label="FAQ menu">
+          <a href="#login-issues">Login & Access</a>
+          <a href="#fee-queries">Fees & Payments</a>
+          <a href="#exam-queries">Exams & Results</a>
+          <small>Common questions answered.</small>
+        </div>
+      </details>
+
+      <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </div>
+  </div>
+
+  <!-- MAIN WRAPPER -->
+  <div class="wrap fade-up">
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar">AK</div>
+        <div class="profile-info">
+          <h4>Aryan Kumar</h4>
+          <p>Computer Science • Year 3</p>
+        </div>
+      </div>
+
+      <nav>
+        <div class="nav-item">Dashboard</div>
+        <div class="nav-item">Attendance</div>
+        <div class="nav-item">Fees</div>
+        <div class="nav-item">Exams & CGPA</div>
+        <div class="nav-item">Transport</div>
+        <div class="nav-item">Hostel</div>
+        <div class="nav-item">Library</div>
+        <div class="nav-item">Notifications</div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="header">
+        <h1>Dashboard</h1>
+        <div class="search"><input placeholder="Search students, id, subjects..."/></div>
+      </div>
+
+      <div class="grid">
+        <div class="card kpi">
+          <div>
+            <div class="label">Attendance</div>
+            <div class="value">72%</div>
+          </div>
+          <div class="circle animate-float">72%</div>
+        </div>
+        <div class="card kpi">
+          <div>
+            <div class="label">Fees Due</div>
+            <div class="value">₹15,000</div>
+          </div>
+          <div class="icon-box">💰</div>
+        </div>
+        <div class="card kpi">
+          <div>
+            <div class="label">CGPA</div>
+            <div class="value">8.6</div>
+          </div>
+          <div class="icon-box">📊</div>
+        </div>
+      </div>
+
+      <div class="card calendar">
+        <h3>September 2025</h3>
+        <div class="cal-grid">
+          <div class="cal-day">1</div>
+          <div class="cal-day">2</div>
+          <div class="cal-day">3</div>
+          <div class="cal-day today">4</div>
+          <div class="cal-day">5</div>
+          <div class="cal-day">6</div>
+          <div class="cal-day">7</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Subject Scores</h3>
+        <div class="subjects">
+          <div class="subject"><span class="sub-name">Maths</span><span class="sub-score">88</span></div>
+          <div class="subject"><span class="sub-name">English</span><span class="sub-score">92</span></div>
+          <div class="subject"><span class="sub-name">Physics</span><span class="sub-score">85</span></div>
+          <div class="subject"><span class="sub-name">Chemistry</span><span class="sub-score">81</span></div>
+          <div class="subject"><span class="sub-name">Computer Science</span><span class="sub-score">95</span></div>
+          <div class="subject"><span class="sub-name">History</span><span class="sub-score">78</span></div>
+          <div class="subject"><span class="sub-name">Economics</span><span class="sub-score">83</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Performance Overview</h3>
+        <svg class="chart" viewBox="0 0 300 140">
+          <rect x="20" y="40" width="20" height="80" fill="var(--dark-red)"/>
+          <rect x="60" y="20" width="20" height="100" fill="var(--accent-red)"/>
+          <rect x="100" y="60" width="20" height="60" fill="var(--dark-red)"/>
+          <rect x="140" y="50" width="20" height="70" fill="var(--accent-red)"/>
+          <rect x="180" y="30" width="20" height="90" fill="var(--dark-red)"/>
+        </svg>
+      </div>
+
+      <div class="grid">
+        <div class="card"><h3>Transport Facility</h3><p>Bus No. 12 • Route A</p></div>
+        <div class="card"><h3>Hostel Facility</h3><p>Block C • Room 204</p></div>
+        <div class="card"><h3>Library Books</h3><p>2 Books due in 5 days</p></div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    University ERP Portal — 2025
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
